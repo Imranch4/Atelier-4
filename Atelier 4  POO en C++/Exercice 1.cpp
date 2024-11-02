@@ -46,15 +46,15 @@ int main() {
     int choice;
     Complex c1, c2, result;
 
-    cout << "Enter real and imaginary part of first complex number: ";
+    cout << "Entrez la partie reelle et la partie imaginaire du premier nombre complexe: ";
     cin >> r1 >> i1;
     c1.setValues(r1, i1);
 
-    cout << "Enter real and imaginary part of second complex number: ";
+    cout << "Entrez la partie reelle et la partie imaginaire du deuxième nombre complexe: ";
     cin >> r2 >> i2;
     c2.setValues(r2, i2);
 
-    cout << "Choose operation:\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Equality\n";
+    cout << "Choisissez une opération :\n1. Addition\n2. Soustraction\n3. Multiplication\n4. Division\n5. Égalité\n";
     cin >> choice;
 
     switch (choice) {
@@ -80,13 +80,13 @@ int main() {
             break;
         case 5:
             if (c1 == c2) {
-                cout << "The complex numbers are equal." << endl;
+                cout << "Les nombres complexes sont égaux." << endl;
             } else {
-                cout << "The complex numbers are not equal." << endl;
+                cout << "Les nombres imaginaire sont égaux." << endl;
             }
             break;
         default:
-            cout << "Invalid choice!" << endl;
+            cout << "Choix invalide!" << endl;
     }
 
     return 0;
